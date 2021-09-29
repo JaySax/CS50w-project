@@ -1,0 +1,118 @@
+/* ---- Image Search ---*/
+
+nav {
+    flex: 1;
+    justify-content: space-between;
+	text-align: right;
+	padding: 20px;
+}
+
+.navbar{
+    flex: 1;
+    text-align: right;
+}
+
+.navbar ul {
+    display: inline-block;
+	list-style-type: none;
+}
+
+.navbar ul li{
+	display: inline-block;
+	margin: 13px;
+}
+
+.navbar ul li a{
+    color: #555;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: right;
+}
+
+.navbar ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #5F9EA0;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100%;  
+}
+
+.search-container{
+    max-width: 1300px;
+	margin: 100px;
+	text-align: center;
+}
+
+.text{
+    color: #4285f4;
+    font: 16px/16px roboto-regular, arial, sans-serif;
+    position: relative;
+    left: 100px;
+    top: auto;
+    white-space: nowrap;
+    margin-top: 0%;
+    margin-bottom: 2px;
+    padding-top: 0px;
+}
+
+#texttosearch {
+       background: transparent;
+       width: 50%;
+       margin: 26px;
+       border: 1px solid #B7BDC8;
+       box-shadow: none;
+       box-sizing: border-box;
+       border-radius: 22px;
+       height: 44px;
+       padding-left: 24px;
+       cursor: text;
+       outline: none;
+       margin-left: 300px;
+       color: #202124;   
+}
+
+#texttosearch:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+#text[type="text"] {
+       font-weight: lighter;
+       border: none;
+       margin: 0;
+       padding-left: 38px;
+       color: #202124;
+       outline: none;
+       display: flex;
+       margin-top: -37px;
+       font-size: 16px;
+       height: 35px;
+     }
+
+input[type="submit"] {
+       background-color: #E5E4E2;
+       border: 1px solid #f8f9fa;
+       border-radius: 4px;
+       color: #3c4043;
+       font-family: arial, sans-serif;
+       font-size: 14px;
+       margin: 30px 4px;
+       padding: 0 16px;
+       height: 36px;
+       text-align: center;
+       cursor: pointer;
+     }
+
+input[type="submit"]:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+svg{
+    display: flex;
+    margin: 10px;  
+}
